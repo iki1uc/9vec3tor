@@ -1,12 +1,9 @@
-// vec9.js – 9vec3tor Kern
-
 export class Vec9 {
   constructor(x = 0, y = 0, z = 0) {
     this.x = x;
     this.y = y;
     this.z = z;
 
-    // 9 Zustände / Layer
     this.layers = {
       L1: "raw",
       L2: "norm",
@@ -49,4 +46,3 @@ export class Vec9 {
     };
   }
 }
-
