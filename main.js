@@ -1,9 +1,6 @@
-// main.js
-
 import { coreVec } from "./core.js";
 
 document.getElementById("run").addEventListener("click", () => {
-  const data = coreVec.toJSON();
-  document.getElementById("out").textContent =
-    JSON.stringify(data, null, 2);
+  const out = document.getElementById("out");
+  out.textContent = JSON.stringify(coreVec.toJSON(), null, 2);
 });
