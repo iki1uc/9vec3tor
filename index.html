@@ -1,15 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>9vec3tor</title>
+  <title>MXU · Root</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #4af;
+    }
+    #run {
+      padding: 12px 22px;
+      background: #4af;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    #out {
+      margin-top: 30px;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 6px;
+      white-space: pre-wrap;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
 
-<button id="run">9vec3tor RUN</button>
-<pre id="out"></pre>
+  <h1>MXU · Root</h1>
+  <p>MXU ist geladen. Du kannst den Kernel testen.</p>
 
-<script type="module" src="main.js"></script>
+  <button id="run">MXU RUN</button>
+  <pre id="out"></pre>
+
+  <script type="module">
+    import * as MXU from "./mxu.js";
+
+    document.getElementById("run").addEventListener("click", () => {
+      const out = MXU.info();
+      document.getElementById("out").textContent = JSON.stringify(out, null, 2);
+    });
+  </script>
+
 </body>
 </html>
-
