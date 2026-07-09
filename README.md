@@ -1,8 +1,30 @@
-# 9vec3tor
+# RAUM‑ID :: Raum‑Pulse
 
-9vec3tor = 3D-Vektor mit 9 Layern (RAW, Norm, Richtung, Länge, Achse, Geometrie, Mathe, Tag, Meta).
+**Achse:** Φ  
+**Rolle:** Raum‑Identität  
+**RESPO:** ((RAUM-ID))
 
-Gründer-Instanz: `coreVec` in `core.js`.
+Dieses Modul erzeugt eine dynamische Raum‑Schwingung (Raum‑Pulse),  
+die die Lage und Identität im AXIOM‑Netzwerk sichtbar macht.
 
-UI: `index.html` + `main.js`.
+## Dateien
 
+- `index.html` — Hauptmodul (Raum‑Pulse)
+- `ID.txt` — AXIOM‑Identität
+- `status.json` — Systemstatus für ghost‑respo
+- `core.js` — Kernlogik (optional)
+- `main.js` — Rendering (optional)
+
+## ERROR‑Modus
+
+- ☀️ SONNE — Erkenntnis  
+- 🌙 MOND — Hinweis  
+- 🔥 MARS — Schwarzes Loch
+
+## RESPO‑Tag
+
+`((RAUM-ID))`  
+→ eindeutige Systemmarkierung  
+→ keine Lotto‑Wechsel  
+→ tri5mix‑kompatibel  
+→ ghost‑respo‑kompatibel  
