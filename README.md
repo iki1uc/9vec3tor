@@ -1,30 +1,51 @@
-# RAUM‑ID :: Raum‑Pulse
+# 9vec3tor – VEC9_MOTOR
 
-**Achse:** Φ  
-**Rolle:** Raum‑Identität  
-**RESPO:** ((RAUM-ID))
+9vec3tor ist die Vektor-Engine des iki1uc-Systems.  
+Sie erzeugt 3D-Vektoren für:
 
-Dieses Modul erzeugt eine dynamische Raum‑Schwingung (Raum‑Pulse),  
-die die Lage und Identität im AXIOM‑Netzwerk sichtbar macht.
+- Achsen (Φ, φ, φ²)
+- IKL (dir, mir, doch, egal, mov, nodi, use, user, REAL)
+- System-Vektoren für META-CORE
+- RAUM-PULSE (X,Y,Z)
+
+---
+
+## AXIOM-ID
+RAUM-ID-001
+
+## CORE
+Φ
+
+## RESPO
+((RAUM-ID))
+
+---
 
 ## Dateien
 
-- `index.html` — Hauptmodul (Raum‑Pulse)
-- `ID.txt` — AXIOM‑Identität
-- `status.json` — Systemstatus für ghost‑respo
-- `core.js` — Kernlogik (optional)
-- `main.js` — Rendering (optional)
+- `vec9.js` – Basis-Vektor-Klasse  
+- `core.js` – Kern-Vektor  
+- `main.js` – Ausgabe-Renderer  
+- `9vec3tor.js` – Modul-Definition  
+- `axes.js` – Achsen-Vektoren  
+- `ikl.js` – IKL-Vektoren  
+- `system.js` – System-Vektoren  
+- `index.html` – RAUM-PULSE Root  
+- `status.json` – Status  
+- `ID.json` – Identität  
+- `ID.txt` – Text-Identität  
 
-## ERROR‑Modus
+---
 
-- ☀️ SONNE — Erkenntnis  
-- 🌙 MOND — Hinweis  
-- 🔥 MARS — Schwarzes Loch
+## Besonderheit
 
-## RESPO‑Tag
+9vec3tor verbindet:
 
-`((RAUM-ID))`  
-→ eindeutige Systemmarkierung  
-→ keine Lotto‑Wechsel  
-→ tri5mix‑kompatibel  
-→ ghost‑respo‑kompatibel  
+- RAUM-PULSE  
+- IKL  
+- META-CORE  
+- AXI  
+- MXU  
+- RESPO  
+
+und liefert die mathematische Grundlage für das gesamte iki1uc-System.
