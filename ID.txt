@@ -1,0 +1,5 @@
+AXIOM-ID: 9vec3tor-001
+CORE: φ
+POS: (2, φ)
+CODE: φ
+RESPO: ((9vec3tor))
