@@ -1,5 +1,5 @@
-AXIOM-ID: 9vec3tor-001
-CORE: φ
-POS: (2, φ)
-CODE: φ
-RESPO: ((9vec3tor))
+AXIOM-ID: RAUM-ID-001
+CORE: Φ
+POS: (3, Φ)
+CODE: Φ
+RESPO: ((RAUM-ID))
