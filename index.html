@@ -2,16 +2,16 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>9vec3tor :: VEC‑SPIN</title>
+<title>RAUM‑ID :: Raum‑Pulse</title>
 
 <style>
-  body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
-  .c { border:1px solid #0f0; padding:20px; width:420px; margin-bottom:20px; }
+  body { background:#000; color:#0ff; font-family:monospace; padding:40px; }
+  .c { border:1px solid #0ff; padding:20px; width:420px; margin-bottom:20px; }
   h1 { margin:0 0 20px 0; }
-  .spin { animation:spin 1.2s infinite; }
-  @keyframes spin { 0%{opacity:0.2;} 50%{opacity:1;} 100%{opacity:0.2;} }
+  .pulse { animation:pulse 1.4s infinite; }
+  @keyframes pulse { 0%{opacity:0.3;} 50%{opacity:1;} 100%{opacity:0.3;} }
 
-  .idbox { border:1px solid #050; padding:10px; margin-top:20px; color:#5f5; }
+  .idbox { border:1px solid #055; padding:10px; margin-top:20px; color:#5ff; }
   .errlink a { color:#f33; text-decoration:none; }
   .errlink a:hover { color:#ff0; }
 </style>
@@ -19,60 +19,47 @@
 
 <body>
 
-<h1>9vec3tor :: VEC‑SPIN</h1>
+<h1>RAUM‑ID :: Raum‑Pulse</h1>
 
 <div class="c">
-  <h3>Vektor‑Rekursion</h3>
-  <pre id="out" class="spin"></pre>
+  <h3>Raum‑Schwingung</h3>
+  <pre id="out" class="pulse"></pre>
 </div>
 
 <div class="idbox">
   <strong>ID‑Stellung:</strong><br>
-  AXIOM‑ID: 9vec3tor‑001<br>
-  CORE: φ<br>
-  POS: (2, φ)<br>
-  CODE: φ<br>
-  RESPO: ((9vec3tor))
+  AXIOM‑ID: RAUM-ID‑001<br>
+  CORE: Φ<br>
+  POS: (3, Φ)<br>
+  CODE: Φ<br>
+  RESPO: ((RAUM-ID))
 </div>
 
 <div class="errlink">
   <h3>ERROR‑Modus</h3>
 
-  <!-- SONNE -->
-  <a href="https://iki1uc.github.io/error/error.html?from=((9vec3tor))&mode=SONNE&hint=VEC-SPIN+Erkenntnis">
-    ☀️ SONNE
-  </a><br>
-
-  <!-- MOND -->
-  <a href="https://iki1uc.github.io/error/error.html?from=((9vec3tor))&mode=MOND&hint=VEC-SPIN+Hinweis">
-    🌙 MOND
-  </a><br>
-
-  <!-- MARS -->
-  <a href="https://iki1uc.github.io/error/error.html?from=((9vec3tor))&mode=MARS&hint=VEC-SPIN+Schwarzes+Loch">
-    🔥 MARS
-  </a>
+  <a href="https://iki1uc.github.io/error/error.html?from=((RAUM-ID))&mode=SONNE&hint=Raum-Pulse+Erkenntnis">☀️ SONNE</a><br>
+  <a href="https://iki1uc.github.io/error/error.html?from=((RAUM-ID))&mode=MOND&hint=Raum-Pulse+Hinweis">🌙 MOND</a><br>
+  <a href="https://iki1uc.github.io/error/error.html?from=((RAUM-ID))&mode=MARS&hint=Raum-Pulse+Schwarzes+Loch">🔥 MARS</a>
 </div>
 
 <script>
-// --- 9vec3tor CORE ---
-function vecSpin() {
-  const v = [
-    (Math.random()*9).toFixed(2),
-    (Math.random()*9).toFixed(2),
-    (Math.random()*9).toFixed(2)
-  ];
+// --- RAUM-ID CORE ---
+function raumPulse() {
+  const x = (Math.random()*100).toFixed(2);
+  const y = (Math.random()*100).toFixed(2);
+  const z = (Math.random()*100).toFixed(2);
 
-  return `VEC‑SPIN → (${v[0]}, ${v[1]}, ${v[2]})`;
+  return `RAUM‑PULSE → X:${x}  Y:${y}  Z:${z}`;
 }
 
 // --- RENDER ---
 function run() {
   const o = document.getElementById("out");
-  o.innerText = vecSpin();
+  o.innerText = raumPulse();
 }
 
-setInterval(run, 700);
+setInterval(run, 900);
 run();
 </script>
 
