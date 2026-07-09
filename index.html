@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>9vec3tor</title>
+<meta charset="UTF-8">
+<title>9vec3tor :: VEC‑SPIN</title>
+
+<style>
+  body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
+  .c { border:1px solid #0f0; padding:20px; width:420px; margin-bottom:20px; }
+  h1 { margin:0 0 20px 0; }
+  .spin { animation:spin 1.2s infinite; }
+  @keyframes spin { 0%{opacity:0.2;} 50%{opacity:1;} 100%{opacity:0.2;} }
+
+  .idbox { border:1px solid #050; padding:10px; margin-top:20px; color:#5f5; }
+  .errlink a { color:#f33; text-decoration:none; }
+  .errlink a:hover { color:#ff0; }
+</style>
 </head>
+
 <body>
 
-<h1>9vec3tor – RUN</h1>
+<h1>9vec3tor :: VEC‑SPIN</h1>
 
-<button id="run">RUN</button>
-<pre id="out"></pre>
+<div class="c">
+  <h3>Vektor‑Rekursion</h3>
+  <pre id="out" class="spin"></pre>
+</div>
 
-<script type="module" src="./main.js"></script>
+<div class="idbox">
+  <strong>ID‑Stellung:</strong><br>
+  AXIOM‑ID: 9vec3tor‑001<br>
+  CORE: φ<br>
+  POS: (2, φ)<br>
+  CODE: φ<br>
+  RESPO: ((9vec3tor))
+</div>
+
+<div class="errlink">
+  <h3>ERROR‑Modus</h3>
+
+  <!-- SONNE -->
+  <a href="https://iki1uc.github.io/error/error.html?from=((9vec3tor))&mode=SONNE&hint=VEC-SPIN+Erkenntnis">
+    ☀️ SONNE
+  </a><br>
+
+  <!-- MOND -->
+  <a href="https://iki1uc.github.io/error/error.html?from=((9vec3tor))&mode=MOND&hint=VEC-SPIN+Hinweis">
+    🌙 MOND
+  </a><br>
+
+  <!-- MARS -->
+  <a href="https://iki1uc.github.io/error/error.html?from=((9vec3tor))&mode=MARS&hint=VEC-SPIN+Schwarzes+Loch">
+    🔥 MARS
+  </a>
+</div>
+
+<script>
+// --- 9vec3tor CORE ---
+function vecSpin() {
+  const v = [
+    (Math.random()*9).toFixed(2),
+    (Math.random()*9).toFixed(2),
+    (Math.random()*9).toFixed(2)
+  ];
+
+  return `VEC‑SPIN → (${v[0]}, ${v[1]}, ${v[2]})`;
+}
+
+// --- RENDER ---
+function run() {
+  const o = document.getElementById("out");
+  o.innerText = vecSpin();
+}
+
+setInterval(run, 700);
+run();
+</script>
+
 </body>
 </html>
